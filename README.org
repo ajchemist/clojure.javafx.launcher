@@ -1,0 +1,33 @@
+#+TITLE: clojure.javafx.launcher
+#+AUTHOR: aJchemist
+#+EMAIL: valchemist@me.com
+
+** Usage
+
+Add launcher dependencies
+
+#+begin_src clojure
+  [clojure.javafx.launcher "0.1.0"]
+#+end_src
+
+Require launcher ns in main
+
+#+begin_src clojure
+  (require '[clojure.javafx.launcher])
+#+end_src
+
+If you're a boot user, try boot repl with javafx
+
+#+begin_src clojure
+  ;;; in build.boot
+
+  (require '[boot.clojure.javafx :refer [launch-javafx]])
+#+end_src
+
+: boot launch-javafx repl
+
+** License
+
+Copyright © 2017 aJchemist
+
+Distributed under the Eclipse Public License, the same as Clojure.
