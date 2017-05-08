@@ -6,7 +6,7 @@
  '[
    [org.clojure/clojure "1.8.0" :scope "provided"]
 
-   #_[adzerk/boot-test "1.1.2" :scope "test"]
+   #_[adzerk/boot-test "1.2.0" :scope "test"]
    [adzerk/bootlaces "0.1.13" :scope "test"]
    ])
 
@@ -17,6 +17,9 @@
 (task-options!
  pom
  {:project 'clojure.javafx.launcher
+  :url "https://github.com/aJchemist/clojure.javafx.launcher"
+  :scm {:url "https://github.com/aJchemist/clojure.javafx.launcher"}
+  :license {"Eclipse Public License" "http://www.eclipse.org/legal/epl-v10.html"}
   :version +version+})
 
 (deftask devfx
